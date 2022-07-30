@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 404</title>
+    <link rel="stylesheet" href="/library/bootstrap5/css/bootstrap.min.css">
+
+    <style>
+        .box {
+            height: 100vh;
+        }
+
+        .img-error {
+            width: 50vw;
+        }
+
+        .error-text {
+            display: inline-block;
+            font-size: 8vw;
+            font-weight: bolder;
+            line-height: 1em;
+            border-bottom: 1vw solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="error-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="box d-flex justify-content-center align-item-center flex-column text-center my-auto">
+                        <div class="text-center">
+                            <img src="/images/404_error.jpg" class="img-error" alt="error picture">
+                            <div class="error-text">ERROR</div>
+                        </div>
+
+                        <div class="btn-control">
+                            <a href="/"><button type="button" class="btn btn-outline-primary border-2 mb-4 mx-2">Go To Dashboard</button></a>
+
+                            <button class="btn btn-warning border-2 mb-4 mx-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-error-stack" aria-expanded="false"
+                                aria-controls="collapse-error-stack">
+                                See Error..
+                            </button>
+                            <div class="collapse" id="collapse-error-stack">
+                                <div class="card card-body">
+                                    <pre><%= error_stack %></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/library/bootstrap5/js/bootstrap.min.js"></script>
+
+</html>

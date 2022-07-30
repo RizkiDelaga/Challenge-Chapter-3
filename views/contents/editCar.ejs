@@ -1,0 +1,105 @@
+<!-- EDIT CAR BEGIN -->
+<div class="sub-tree d-flex mt-3 mb-3">
+    <a href="#">
+        <p class="fw-bold">Cars</p>
+    </a>
+    <i class="fa fa-solid fa-chevron-right mx-2"></i>
+    <a href="#">
+        <p class="fw-bold">List Car</p>
+    </a>
+    <i class="fa fa-solid fa-chevron-right mx-2"></i>
+    <p>Edit Car</p>
+</div>
+
+<h2>Edit Car</h2>
+
+<form action="/cars" method="#">
+    <div class="card p-4">
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Nama<span class="text-danger">*</span>
+                    </p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" value placeholder="Nama">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Harga<span class="text-danger">*</span>
+                    </p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" value placeholder="Harga">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Foto<span class="text-danger">*</span>
+                    </p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <input type="file" class="form-control" id="upload-file" style="display:none;"
+                    onchange="getNameFile(this.value)">
+                <label for="upload-file" class="form-control icon text-secondary">
+                    <span id="file-input">No file selected</span>
+                    <img src="/icons/Upload_Icon.png" class="float-end">
+                </label>
+                <p class="text-secondary mt-1" style="font-size: 10px;">File size max. 2MB</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Start Rent</p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <p class="text-secondary col-form-label">-</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Finish Rent</p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <p class="text-secondary col-form-label">-</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Created at</p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <p class="text-secondary col-form-label">-</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="col-form-label">
+                    <p>Updated at</p>
+                </label>
+            </div>
+            <div class="col-lg-5">
+                <p class="text-secondary col-form-label">-</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-decision mb-5">
+        <a href="/cars"><button type="button" class="btn rounded-2 me-3 btn-cancel">Cancel</button></a>
+        <button type="submit" class="btn btn-save">Save</button>
+    </div>
+</form>
+<!-- EDIT CAR END -->

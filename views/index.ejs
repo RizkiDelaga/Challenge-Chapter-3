@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Administrator</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/library/bootstrap5/css/bootstrap.min.css">
+    <!-- Manual CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- LOGIN ADMIN SECTION BEGIN -->
+        <section class="login-admin-section">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 p-0 hidden-on-small-size">
+                    <img src="/images/Cars_Login_Image.png" class="cars-baner w-100 vh-100" alt="cars">
+                </div>
+                <div class="col-lg-4 col-md-6 px-0 py-5 d-flex flex-column mt-auto mb-auto align-items-center">
+                    <div class="form-head float-start">
+                        <img src="/images/BCR_Logo.png" alt="logo BCR">
+                        <h1>Welcome back</h1>
+                    </div>
+                    <div class="form-content">
+                        <form action="/dashboard">
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail"
+                                    placeholder="Contoh: johndee@gmail.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="6+ karakter"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LOGIN ADMIN SECTION END -->
+    </div>
+
+</body>
+
+</html>
